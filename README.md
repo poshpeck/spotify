@@ -5,6 +5,12 @@
 <h2>Description</h2>
 This Power BI dashboard was created to visualize the top streamed songs on Spotify as of 2023. It highlights key metrics and insights for the most popular tracks, focusing on the song with the highest streams, "Blinding Lights" by The Weekend, along with comparisons to other top tracks.
 
+<p align="center">
+Launch the utility: <br/>
+<img src="[https://i.imgur.com/62TgaWL.png](https://imgur.com/a/G4UBdZq)" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+
 <h2>Project Purpose</h2>
 The purpose of this project is to analyze streaming data for Spotify’s most popular songs, identify trends, and visualize the metrics that define a "hit" song in terms of streams, release date, and musical characteristics. This dashboard is designed to offer a clear, interactive view of Spotify's top music trends for 2023, with an emphasis on key performance metrics like total streams, track energy, and monthly streaming patterns.
 
@@ -56,6 +62,23 @@ The purpose of this project is to analyze streaming data for Spotify’s most po
 - Data Visualization: Created a visually appealing, informative layout to convey music streaming data.
 - Data Analysis: Analyzed key metrics that contribute to a song’s popularity, such as energy, danceability, and liveness.
 - Power BI Techniques: Used DAX, filters, and custom visuals to create a dynamic, interactive experience.
+
+<h2>How to Access / Installation</h2>
+
+To view the dashboard locally:
+- Download the .pbix file from this repository.
+- Open it in Power BI Desktop.
+
+<h2>License</h2>
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+<h2>Acknowledgments</h2>
+
+The data used in this analysis was gotten from [https://onyxdata.ck.page/a12261b1fb](https://onyxdata.ck.page/a12261b1fb).
+
+Injae Park for inspiration.
+
 
 <p align="center">
 Launch the utility: <br/>
