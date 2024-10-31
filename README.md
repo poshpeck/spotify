@@ -6,8 +6,8 @@
 This Power BI dashboard was created to visualize the top streamed songs on Spotify as of 2023. It highlights key metrics and insights for the most popular tracks, focusing on the song with the highest streams, "Blinding Lights" by The Weekend, along with comparisons to other top tracks.
 
 <p align="center">
-Launch the utility: <br/>
-<img src="[https://i.imgur.com/62TgaWL.png](https://imgur.com/a/G4UBdZq)" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+Report Snapshot:  <br/>
+<img src="https://imgur.com/XN940Lj.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
 
@@ -69,9 +69,6 @@ To view the dashboard locally:
 - Download the .pbix file from this repository.
 - Open it in Power BI Desktop.
 
-<h2>License</h2>
-
-This project is licensed under the MIT License - see the LICENSE file for details.
 
 <h2>Acknowledgments</h2>
 
@@ -79,14 +76,17 @@ The data used in this analysis was gotten from [https://onyxdata.ck.page/a12261b
 
 Injae Park for inspiration.
 
+![Snap_Percentage](https://imgur.com/a/G4UBdZq))
+
+https://imgur.com/XN940Lj
 
 <p align="center">
 Launch the utility: <br/>
-<img src="https://i.imgur.com/62TgaWL.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="[https://imgur.com/a/G4UBdZq](https://i.imgur.com/XN940Lj.jpeg)](https://imgur.com/XN940Lj)" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
 Select the disk:  <br/>
-<img src="https://i.imgur.com/tcTyMUE.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://imgur.com/XN940Lj.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
 Enter the number of passes: <br/>
