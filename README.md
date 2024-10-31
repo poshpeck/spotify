@@ -98,7 +98,7 @@ The purpose of this project is to analyze streaming data for Spotify’s most po
 <h2>How to Access / Installation</h2>
 
 To view the dashboard locally:
-- Download the .pbix file from this repository.
+- Download the [.pbix](spotify streams.pbix) file from this repository.
 - Open it in Power BI Desktop.
 
 
