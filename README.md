@@ -6,8 +6,8 @@
 This Power BI dashboard was created to visualize the top streamed songs on Spotify as of 2023. It highlights key metrics and insights for the most popular tracks, focusing on the song with the highest streams, "Blinding Lights" by The Weekend, along with comparisons to other top tracks.
 
 <p align="center">
-Report Snapshot:  <br/>
-<img src="https://imgur.com/XN940Lj.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+Report Snapshot  <br/>
+<img src="https://imgur.com/XN940Lj.png" height="80%" width="80%"/>
 <br />
 <br />
 
@@ -34,7 +34,7 @@ The purpose of this project is to analyze streaming data for Spotify’s most po
 - A timeline showing the release dates of the most-streamed songs, helping to identify whether recent releases or older songs dominate Spotify's streaming charts.
 
 <h2>Data Source</h2>
-<b>The data was sourced from Spotify's API, focusing on metrics relevant to the most-streamed songs of 2023. Each song’s data includes</b>
+<b>The data focused on metrics relevant to the most-streamed songs of 2023. Each song’s data includes</b>
 
 - Total streams.
 - Acousticness, danceability, liveness, speechiness, and valence scores.
@@ -45,9 +45,41 @@ The purpose of this project is to analyze streaming data for Spotify’s most po
 <b>This project uses several Power BI features to achieve a visually compelling and insightful dashboard</b>
 
 - Custom Visualizations: Utilized Power BI's native charts and custom visualizations for the bar and gauge charts.
+
+<p align="center">
+   Custom visualization using <a href="https://vega.github.io/editor/#/url/vega/N4IgJAzgxgFgpgWwIYgFwhgF0wBwqgegIDc4BzJAOjIEtMYBXAI0poHsDp5kTykSArJQBWENgDsQAGhAB3GgBN6aAMwAGNTPg0yWVRpk4kChTXFk0AzSCZIoAazIAnNg3EK0IAMQAmPwBYVAEZpEAgdcSQAGwg0AG1QSIQ4T0w4AA9MAHEnYxo4cUxQhhwFJDTPYGc8gsxUAAIAciizOCQnRql6iEw2PAaEtgAzIYg4OvrNeqg2KLYnBsavIP8FAA4oKEaAXy7gYdHxhqCumbmFpq9-KDWmODgdgF1tkF3EpGTPHDgnKFri0rlFLoNYqV6PGRlTAoVAJEBJYE2Oz2ULEaIMOCxWEQkCYXLiCBDeYIeKgTAAT2+njGAEcMeI-qEeu0iqhrD0+mgggYwmkcFyZEgsSA0VFXlIyZTEUSnAgGFEUDIMjgnJ4QoLhUU3ripV98qEhvkoh50EUZMynJgAILmKLA0DhMiRMXoNTikAFBQ2sh2tAOiLRTw+ABUAAUAJKvbbPCXwj7SlyFVHozHxHF4pAEmUk2GSqnoWn0xnm6GWtDs3r81D+p2B9DfX7-Xa8uBVk4gIWeUXivPS4nyxUe9IqtWhTumns6-MgHD6mSGuDG1JM0vW232sIBl0gN3Nz3e33Vze17cAClPIYjAEoCNy1Ffgw2-knttHo+aoNFU7m4590Gd5lCClpxacQ2lVSE2GQMw-RAKEYSRBwDSNE0RUDZt8TIYE4m8FZ1k2UIrhuO4UhkLwADYBHIgB2e5CKYAQVBUBQfHoxjmNY54cWQJx7CxOFgMRdooANFwc1AeDPFsJC9wZNgFA3Woflgw0ohdUBRQxTwvBUIZ-B8fwUmbdJYMdZ1PHkJQYHqAh6lY5tyVMrdPG0XRMBsuyoxkEooQ3C01x9DcFyXAtVwPIylXccKVJQzx93Xd0jC9BKjzMusd0oNQggEd0zDApwACU8gYLEa3M9BT0s+gPJ8K8AFpsvdVw0kK4rSuPcq5EUarbPs19tUEzxhNEqDYMk9AhkTLVIpmBTYKU1Uj1U9Swk-Q8QAAiCQGC1Du2MpyTws7rrN691HNS5z0FcrAaq8kAfKBUywpS0AdupZ7AvdeLPqW2L0G+31myS6KLsO11Msa5s8p+IrTBKg7Osq46avqyGZGamG2oR9KqpOzz+oG3V0GGyFyhhOEYSCd8PTkuajwWmK1NgzTER0vSDIikATNBzrcduhzse3a73NO19vMBCpUo+w8yvS3dIuSn7Ze3S9Iyh8R8thmh4Z59KkaslG6p8HLmwx1q4fatKzz53r6p8Xd+tjQbTQyM04LJ0lqYKWaNweyWyVdwWvh+Z93IAaiaABSRp3WiCJmZTTxQ+U5siUKAB1OAdD0I8Wak2YPFTmgmd17c0kyHIahfGRueVo6DYIeyZHOuv0Btpu4JbtCoi01BuVTiRMAAZRoAAvDc89Qai1AJp2idxQPSehT2cW9+TfYljdy9ZDTE-QCR6lLLDpo7FonQTnvEWT1UB4zrO3Iv3ubAL91lsf1mAE41A-nwkBCfbS71x6h3LuVsgEnQ7goLuk9-Az3nIPEe49376AJs8IAA/view">DENEB</a>
+</p>
+<p align="center">
+<br/>
+<img src="https://imgur.com/POjbcg4.png" height="50%" width="50%"/>
+<br />
+<br />
+
+
 - DAX Calculations: Created custom measures to calculate average streams per year, energy levels, and monthly streaming trends.
+  
+  ```date = DATE(Spotify_Dataset[released_year], Spotify_Dataset[released_month], Spotify_Dataset[released_day])```
+  
+  ```Average stream per year = CALCULATE(AVERAGE('Spotify_Dataset'[streams]),ALLEXCEPT('Spotify_Dataset', 'Date'[Year]))```
+
+    ```Max streams = MAX(Spotify_Dataset[streams])```
+
+  `Percent_Val = AVERAGE(Spotify_Dataset[energy_%])`
+
+  `Top song streams = CALCULATE(SUM(Spotify_Dataset[streams]),Spotify_Dataset[streams] = MAX(Spotify_Dataset[streams]))`
+
+  `Top song vs AVG = VAR x = [Top song vs avg val] RETURN IF(x > 0, FORMAT(x, "#.0%") & " " & UNICHAR( 9650), FORMAT(x, "#.0%") & " " & UNICHAR( 9660))`
+
+  `Track = COUNT(Spotify_Dataset[track_name])`
+
+  `Top song vs avg val = DIVIDE([Top song streams] - [Average stream per year],[Average stream per year])`
+
+  Date table was created using [BRAVO for Power BI](https://bravo.bi/)
 - Interactive Filtering: Allows users to filter by year, artist, and track to explore the data further.
 - Dynamic Date Filters: Supports a time range selector that lets users adjust the period they wish to analyze.
+
+
+
 
 
 <h2>Usage Instructions</h2>
@@ -76,19 +108,6 @@ The data used in this analysis was gotten from [https://onyxdata.ck.page/a12261b
 
 Injae Park for inspiration.
 
-![Snap_Percentage](https://imgur.com/a/G4UBdZq))
-
-https://imgur.com/XN940Lj
-
-<p align="center">
-Launch the utility: <br/>
-<img src="[https://imgur.com/a/G4UBdZq](https://i.imgur.com/XN940Lj.jpeg)](https://imgur.com/XN940Lj)" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-Select the disk:  <br/>
-<img src="https://imgur.com/XN940Lj.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
 Enter the number of passes: <br/>
 <img src="https://i.imgur.com/nCIbXbg.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
