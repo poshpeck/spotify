@@ -1,6 +1,6 @@
 <h1>Spotify Most Streamed Songs Dashboard</h1>
 
- ### [Intercative Dashboard](https://app.powerbi.com/view?r=eyJrIjoiZThkOTA4ZjUtZTgxYi00OGYzLTgzYjQtZTY1MGRkZDZkNTA4IiwidCI6IjQ2ZWUyN2EzLTRlYjMtNDVhMy04MWIzLTRkYzk4NjNiNGEzZiJ9)
+ ### [Interactive Dashboard](https://app.powerbi.com/view?r=eyJrIjoiZThkOTA4ZjUtZTgxYi00OGYzLTgzYjQtZTY1MGRkZDZkNTA4IiwidCI6IjQ2ZWUyN2EzLTRlYjMtNDVhMy04MWIzLTRkYzk4NjNiNGEzZiJ9)
 
 <h2>Description</h2>
 This Power BI dashboard was created to visualize the top streamed songs on Spotify as of 2023. It highlights key metrics and insights for the most popular tracks, focusing on the song with the highest streams, "Blinding Lights" by The Weekend, along with comparisons to other top tracks.
